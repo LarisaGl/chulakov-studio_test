@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Chulakov-studio test</title>
+</head>
+<body>
+
+  <!--Sidebar-->
+  <section class="sidebar">
+    <div class="sidebar__header">
+      <p class="sidebar__header__logo">Chulakov</p>
+      <p class="sidebar__header__logo sidebar__header__logo--chahge-color">ru</p>
+    </div>
+    <menu class="sidebar__menu">
+      <a href="#" class="sidebar__menu__link"><li class="sidebar__menu__item">Первая ссылка</li></a>
+      <a href="#" class="sidebar__menu__link"><li class="sidebar__menu__item">Вторая ссылка</li></a>
+      <a href="#" class="sidebar__menu__link"><li class="sidebar__menu__item">Трьетья ссылка</li></a>
+      <a href="#" class="sidebar__menu__link"><li class="sidebar__menu__item sidebar__menu__item--modify">Личный кабинет</li></a>
+      <a href="#" class="sidebar__menu__link"><li class="sidebar__menu__item sidebar__menu__item--modify">Выйти</li></a>
+    </menu>
+  </section>
+  <!--End sidebar-->
+
+  <!--Main section-->
+  <section class="payment-section">
+
+    <!--Main header-->
+    <div class="payment-section__header">
+      <h2 class="payment-section__main-header">Заголовок страницы</h2>
+      <p class="payment-section__description">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+    </div>
+    <!--End main header-->
+
+    <!--Payment info-->
+    <div class="payment-data">
+
+      <div class="payment-data__info">
+        <p class="payment-data__info__header">Информация по оплате:</p>
+        <table>
+          <tr>
+            <td class="payment-data__info__title">Номер счета:</td>
+            <td class="payment-data__info__value">87123658716587</td>
+          </tr>
+          <tr>
+            <td class="payment-data__info__title">Сумма платежа:</td>
+            <td class="payment-data__info__value">100 руб.</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card-details">
+        <h3 class="card-details__header">Данные банковской карты</h3>
+
+        <form class="card" method="post" onsubmit="return validate()">
+          <div class="card__front">
+              <label class="card__front__title">Номер карты</label>
+              <input class="card__front__number" type="text" placeholder="0000" pattern="[0-9]{4}" required>
+              <input class="card__front__number" type="text" placeholder="0000" pattern="[0-9]{4}" required>
+              <input class="card__front__number" type="text" placeholder="0000" pattern="[0-9]{4}" required>
+              <input class="card__front__number" type="text" placeholder="0000" pattern="[0-9]{4}" required>
+              <label class="card__front__title">Срок действия</label>
+              <select class="card__front__month" name="month" required>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select class="card__front__year" name="year" required>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
+              <input class="card__front__holder" id="holder" type="text" placeholder="Держатель карты" pattern="[A-Za-z]{4,}" required>
+          </div>
+          <div class="card__back">
+            <div class="card__back__line"></div>
+            <label class="card__back__title">Код CVV2 / CVC2</label>
+            <input class="card__back__cvv" id="cvv" type="password" pattern="[0-9]{3}" placeholder=" " required>
+          </div>
+          <input class="card__button" type="submit" value="Оплатить">
+        </form>
+
+      </div>
+    </div>
+    <!--End payment info-->
+
+    <!--Footer-->
+    <div class="footer">
+      <p class="footer__paragraph">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+      <p class="footer__paragraph">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+      <p class="footer__paragraph">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+      <p class="footer__paragraph">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+    </div>
+    <!--End footer-->
+
+  </section>
+  <!--End main section-->
+
+</body>
+</html>
